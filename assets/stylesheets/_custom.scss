@@ -1,0 +1,495 @@
+html, body {
+  color:#191847;
+  margin:0px;
+  padding:0px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+
+.nav-item {
+  text-decoration: none;
+  color:red;
+}
+a:hover, a:active {
+  color:red;
+
+}
+
+//home
+
+.intro-text {
+  position:absolute;
+  top:152px;
+  left:40%;
+}
+
+.kaki {
+  font-size: 64px;
+  font-weight:bold;
+}
+.home {
+  padding-top: 3em;
+}
+
+// about
+
+.about {
+  background: url('../image/about_bg.svg') center left;
+  height:120vh;
+  background-size:cover;
+  overflow-x:hidden;
+}
+
+.about-h {
+  position:absolute;
+  top:4%;
+  left:8%;
+  font-size:56px;
+  font-weight:bold;
+ opacity:0.8;
+ text-shadow: 2px 2px rgba(0,0,0,0.5);
+
+}
+
+.about-ht {
+  font-size:48px;
+  font-weight:bold;
+}
+
+.about-p {
+  width:80%;
+  position:absolute;
+  bottom:21%;
+  left:11%;
+
+}
+
+.about-p-e {
+
+    left: 20%;
+
+  }
+
+.about-t {
+  position: absolute;
+  bottom: 24%;
+  left: 55%;
+  width: 30%;
+
+}
+
+.skill {
+  height:150vh;
+  width:100vw;
+}
+
+ .skill-ipad {
+  overflow:hidden;
+ left:-35%;
+ // full -2%;
+ top:20%;
+
+
+  }
+
+  .skill-pacman {
+
+  overflow:hidden;
+  left:8%;
+  top:42%;
+  }
+
+//work
+
+.work {
+  background: url('../image/work_bg.png') center  ;
+  height:150vh;
+  width:100vw;
+  background-repeat: no-repeat;
+}
+
+  .work-card-a {
+    bottom: 200px;
+    left: 417px;
+    width: 30%;
+    // overflow:hidden;
+
+  }
+
+  .work-card-b {
+    bottom: 230px;
+    right: 108px;
+    width: 30%;
+  // overflow:hidden;
+
+  }
+  .work-card-c {
+     bottom: 0px;
+    left: 228px;
+    width: 30%;
+    overflow: hidden;
+    height: 30vh;
+  // overflow:hidden;
+
+  }
+  .work-card-d {
+     bottom: 0;
+    right: 286px;
+    width: 30%;
+    height: 35vh;
+    overflow: hidden;
+  // overflow:hidden;
+
+  }
+
+//contact
+.contact {
+  background: url('../image/bg_contact_b.svg') center bottom ;
+  background-repeat: no-repeat;
+  height:150vh;
+  width:100vw;
+}
+
+
+   .profile-nav {
+    width:15%;
+   }
+
+   .profile-content {
+    width:50%;
+
+   }
+  .profile-display {
+    background-color:#23E06E;
+    width:50%;
+  }
+
+  .carousel {
+    width:30%;
+  }
+
+//   .carousel-control-prev-icon,
+.profile-display .carousel-control-prev{
+
+  position:absolute;
+  left:-50%;
+
+}
+
+.profile-display .carousel-control-next{
+
+  position:absolute;
+  right:-50%;
+
+}
+
+.profilf-cd {
+  flex-grow:1;
+}
+
+.profilf-text {
+  height:30%
+}
+.profilf-display  {
+  background-color:#FF9B21;
+  flex-grow:1;
+}
+.profilf-display .carousel {
+  width: 40vw;
+
+}
+
+.fun {
+  background: url('../image/fun_tri_a.png') top left no-repeat;
+  height:100vh;
+  background-size:cover;
+}
+
+.profile-display-f .carousel {
+  width: 30vw;
+
+}
+
+.profile-display-f .carousel-control-prev {
+
+  position:absolute;
+  left:-24%;
+
+}
+
+.profile-display-f .carousel-control-next {
+
+  position:absolute;
+  right:-24%;
+
+}
+
+.contact {
+
+}
+
+@include media-breakpoint-down(md) {
+
+
+  //home
+  .home {
+    padding-top: 0px;
+
+  }
+
+  .home-girl {
+    height:50vh;
+  }
+
+  .kaki {
+  font-size: 32px;
+  font-weight:bold;
+  margin-bottom: 0.2em;
+ }
+
+  .full-stack {
+  font-size:18px;
+  }
+
+  .home-shape-g {
+    width:80%;
+    margin-top: 0px;
+  }
+
+  .intro-text {
+  position:absolute;
+  top:30%;
+  left:30%;
+
+  }
+
+
+  .about-m {
+  background: url('../image/about_bgm.png') center top;
+  height:120vh;
+  background-size:cover;
+  }
+
+  .about-pm {
+    position: absolute;
+    left: 10%;
+    top: 18%;
+  }
+
+  .about-hm {
+    position:absolute;
+    left:10%;
+    top:10%;
+    font-weight:bold;
+    font-size:30px;
+  }
+
+  .about-tm {
+    height:80%;
+    font-size:12px;
+    width:60%;
+  }
+
+
+
+
+
+
+ // skill
+
+  .skill {
+  background: url('../image/bg_skill_m.svg') right top;
+  width:100vw;
+  height:120vh;
+  background-size:cover;
+  }
+
+
+  .skill-hm {
+    top:6%;
+    right:15%;
+    font-size:30px;
+    font-weight:bold;
+  }
+  .pacman {
+    display:block;
+  }
+
+  .pacman-m {
+    height:16%;
+  }
+
+  .skill-pacman-m {
+    bottom:1%;
+
+  }
+
+
+  .bean-m {
+    margin:1.5em;
+    height:4%;
+  }
+  //work
+
+  .work {
+  background: url('../image/bg_work_m.svg') right bottom;
+  width:100vw;
+  height:120vh;
+  background-size:cover;
+
+  }
+
+  .work-card-a-m {
+  bottom:60%;
+  left:0%;
+  width:64%;
+
+  }
+
+  .work-card-b-m {
+  bottom:66%;
+  right:-20%;
+  width:64%;
+
+  }
+  .work-card-c-m {
+  bottom:30%;
+  left:-18%;
+  width:64%;
+
+  }
+  .work-card-d-m {
+  bottom:36%;
+  right:-2%;
+  width:64%;
+
+  }
+
+  .work-hm {
+    font-size:30px;
+    font-weight:bold;
+    bottom:18%;
+    right: 4%;
+  }
+
+  //contact
+
+.contact {
+  background: url('../image/bg_contact_m.svg') center top;
+  background-repeat: no-repeat;
+  width:100%;
+  height:150vh;
+
+  background-size:cover;
+}
+   // profile
+.profile-nav {
+    height:10vh;
+   }
+
+.profile-content {
+    height:30vh;
+    font-size:12px;
+   }
+.profile-display {
+    background-color:#23E06E;
+    height:60vh;
+  }
+
+.carousel {
+    width:40%;
+  }
+
+//   .carousel-control-prev-icon,
+.carousel-control-prev{
+
+  position:absolute;
+  left:-50%;
+
+}
+
+.carousel-control-next{
+
+  position:absolute;
+  right:-50%;
+
+}
+
+
+.profilf-m {
+  background: url('../image/profile_bg_m.png') bottom center;
+  min-height:100vh;
+  background-size:cover;
+}
+
+.profilf-content {
+    height:50vh;
+    font-size:12px;
+    width:100%;
+   }
+.profilf-display-m {
+    height:30vh;
+
+  }
+
+.profilf-display .carousel-control-prev{
+
+  position:absolute;
+  left:-15%;
+
+}
+
+.profilf-display .carousel-control-next {
+
+  position:absolute;
+  right:-15%;
+
+}
+
+
+.fun_m {
+  background: url('../image/fun_tri_m.png') bottom center;
+  min-height:100vh;
+  background-size:cover;
+}
+
+
+
+
+
+// .carousel-control-next-icon:after
+// {
+//   content: '>';
+//   font-size: 55px;
+//   color: white;
+// }
+
+// .carousel-control-prev-icon:after {
+//   content: '<';
+//   font-size: 55px;
+//   color: white;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+}
