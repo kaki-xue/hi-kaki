@@ -16,7 +16,13 @@ const About = () => {
           <div className="d-flex flex-column justify-content-center" data-aos="fade-up">
             <div className="px-lg-5 px-2 py-5 mt-5 " >
               <h3 >A Brief Intro</h3>
-              <div className="" >I’m a China local currently living in Shanghai Love creating stuff. Programming is so far the best way I know how. Been longing for greener world, green is my favorite color. Blahblah</div>
+              <div className="intro-text" >
+              <p>I am chinese national, based in Shanghai. My name is Li Xue (/shue/). Call me Kaki if it’s easier 😉
+              . I was in marketing for a few years, transferred my career as a free-lance developer in 2019. Trained full-stack, I do have a little preference on frondend / passionate about colors/  design since I was a teenager. Feel free to check on a few of my projects here
+              </p>
+               <p>Oh , drag and drop 👇🏻 things that I appreciate in life. Cheers  </p>
+
+              </div>
             </div>
             <div className="w-100 pt-3 mx-0 d-flex justify-content-center" >
               <Gallery />

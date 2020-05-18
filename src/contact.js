@@ -23,7 +23,9 @@ const Contact = () => {
             <CardContact/>
           </div>
           <div data-aos= "zoom-in-up" className="position-absolute contact-me">
-          Hey feel free to contact me via wechat or email, not a big social media fun , but I will get back to you !
+           <p> Hey feel free to contact me via wechat or email if you would like to build a website, webapp, mini-programs or simply wanna chat over a cup of tea !</p>
+            <p> wechat: kakixue-li <br/>
+           email: kaki.noodles@gmail.com </p>
           </div>
         </div>
         <div className="d-lg-none pt-5 d-flex flex-column vw-100 vh-100 justify-content-center align-items-center">

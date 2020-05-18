@@ -23,7 +23,8 @@ class Fun extends Component {
             <div className="w-75">
               <p className="text-black-50">Wechat mini program</p>
               <h3>Plantopia</h3>
-              <p>Plant topia is a wechat mini program that isdesigned for people who has little knowledge as how to take care plant or</p>
+              <p>Some fun little projects that I’ve done with pure vanilla javascript. A keyboard drumset, an ever clicking digital clock, a gallery on religions etc.
+</p>
             </div>
 
           </div>
@@ -57,7 +58,7 @@ class Fun extends Component {
             <div className="w-75">
               <p className="text-black-50">Wechat mini program</p>
               <h3>Plantopia</h3>
-              <p>Plant topia is a wechat mini program that isdesigned for people who has little knowledge as how to take care plant or</p>
+              <p>Some fun little projects that I’ve done with pure vanilla javascript. A keyboard drumset, an ever clicking digital clock, a gallery on religions etc.</p>
             </div>
 
           </div>

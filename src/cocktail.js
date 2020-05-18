@@ -24,8 +24,9 @@ class Cocktail extends Component {
           <div className="profile-content d-flex justify-content-center align-items-start pt-5 mt-4 ">
             <div className="w-75">
               <p className="text-black-50">Web APP</p>
-              <h3>Project Cocktail Bar</h3>
-              <p>Plant topia is a wechat mini program that isdesigned for people who has little knowledge as how to take care plant or</p>
+              <h3>Project Bar of Change</h3>
+              <p>A web-app called Bar of Change that showcases ‘iching” inspired cocktails. On top of that , visitors can also create their own special mix to contribute to the cocktail recipe base.
+</p>
             </div>
           </div>
 

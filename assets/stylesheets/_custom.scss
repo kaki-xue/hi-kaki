@@ -676,11 +676,11 @@ box-shadow: 0 0 20px rgba(0,0,0,0.3);
   // left:-35%;
   position:absolute;
   top:10%;
-  left: -25%;
+  left: -100%;
    width:100%;
     @include media-breakpoint-up (md) {
       top:-5%;
-      left: -25%;
+      left: -40%;
       width:100%;
       @include media-breakpoint-up (lg) {
         left: -25%;

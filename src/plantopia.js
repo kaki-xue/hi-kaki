@@ -24,7 +24,7 @@ class Plantopia extends Component {
             <div className = "pt-lg-5 ">
               <p className="text-black-50">Wechat mini program</p>
               <h2>Plantopia</h2>
-              <p>Plant topia is a wechat mini program that isdesigned for people who has little knowledge as how to take care plant or</p>
+              <p>Plantopia is a WeChat mini program which enables people to recognize and discover plants by simply take a photo of it. They can also create the digital profiles for their own plants on this mini program for better and easier plant management such as getting reminders when their plants are unhappy due to dehydration.</p>
             </div>
           </div>
 

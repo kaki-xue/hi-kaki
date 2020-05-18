@@ -26,7 +26,8 @@ class SpareLeash extends Component {
               <div className="pt-lg-5">
                 <p className="text-black-50">Wechat mini program</p>
                 <h3>SpareLeash</h3>
-                <p>Spare Leash is a pet-sitting platform that connects pet owners to verified pet-sitters. Services include everything from dog walking, training, and dog boarding to cat sitting and even helping out with trips to the vet. </p>
+                <p>Spare Leash is an online platform connecting pet owners to applied pet sitters. No longer need to impose on your families and friends when you are going for vacations or simply not available to take care of your darling pets.
+</p>
               </div>
             </div>
             <div className="profilf-display  d-flex justify-content-center align-items-center">

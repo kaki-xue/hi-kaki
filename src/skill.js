@@ -21,7 +21,7 @@ const Skill =() => {
   })
   const moveIpad = useSpring({
       delay: 500,
-    transform: isToggled ? 'translateX(300px)':'translateX(0px)',
+    transform: isToggled ? 'translateX(400px)':'translateX(0px)',
     duration: 500,
     config: config.molasses
   })
@@ -46,9 +46,6 @@ const Skill =() => {
 
     return (
       <div className="skill position-relative " id="skill">
-
-
-
         <div className=" w-100 h-75 " >
           <Waypoint
             topOffset="90%"
@@ -56,8 +53,8 @@ const Skill =() => {
             bottomOffset="40%"
             onLeave={()=> setToggle(false)}
           >
-            <div className=" skill-ipad ">
-              <animated.img  src={ipad} style={moveIpad}className="w-75"alt=""/>
+            <div className="skill-ipad">
+              <animated.img  src={ipad} style={moveIpad} className="w-75"alt=""/>
             </div>
           </Waypoint >
             <div className="w-75  d-flex align-items-lg-center align-items-end justify-content-lg-center justify-content-start pl-2 skill-pacman ">
@@ -67,10 +64,7 @@ const Skill =() => {
             </div>
         </div>
       </div>
-
-
       )
-
 }
 
 export default Skill;
