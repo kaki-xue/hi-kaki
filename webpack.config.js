@@ -6,9 +6,12 @@ module.exports = {
   output: {
     path: path.resolve( __dirname, 'dist'),
     filename: 'main.js',
+    publicPath: '/',
   },
   module: {
+
     rules: [
+
       {
         test:  /\.(js$|jsx)/,
         exclude: /node_modules/,
@@ -39,13 +42,18 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: path.resolve( __dirname, 'public/index.html'),
       filename: 'index.html'
     })
   ],
+
   devtool: 'sourcemap',
+
   mode: "development",
   resolve: {
     extensions: [ '.js', '.jsx' ]

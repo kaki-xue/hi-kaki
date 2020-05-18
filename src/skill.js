@@ -1,44 +1,77 @@
-import React, {Component} from 'react';
+import React, {useState}from 'react';
 import ipad from '../assets/image/skill_ipad.svg'
-import pacman from '../assets/image/pacman.png'
-import bean from '../assets/image/bean.png'
+import pacman from '../assets/image/skill_pacman_p.svg'
+import bean from '../assets/image/skill_bean.svg'
+import {useSpring, animated, config} from 'react-spring';
+import {Waypoint } from 'react-waypoint'
 
-class Skill extends Component {
-  render() {
+
+
+
+
+const Skill =() => {
+
+  const [isToggled, setToggle] = useState(false);
+  const moveIt = useSpring({
+    transform: isToggled ? 'translateX(500px)':'translateX(0px)',
+    delay:500,
+    duration: 2000,
+    config: config.molasses,
+
+  })
+  const moveIpad = useSpring({
+      delay: 500,
+    transform: isToggled ? 'translateX(300px)':'translateX(0px)',
+    duration: 500,
+    config: config.molasses
+  })
+  const makeGone = useSpring({
+    visibility: isToggled? 'hidden': 'visible',
+    delay: 700
+  })
+  const makeGoneTwo = useSpring({
+    visibility: isToggled? 'hidden': 'visible',
+    delay: 800
+  })
+
+  const moveFast = useSpring({
+    transform: isToggled ? 'translateX(200px)': 'translateX(0px)',
+    delay: 800,
+    duration:1000,
+    tension:400,
+    config: config.wobbly
+  })
+
+   console.log('hey you')
+
     return (
-      <div className="skill position-relative" id="skill">
-        <div className="d-lg-none d-flex flex-column justify-content-center  w-100 h-75 mb-3 ">
-        <div className="skill-hm position-absolute"> Skill</div>
-          <div className=" w-75 d-flex align-items-center ">
-            <img src={ipad} className="w-100"alt=""/>
-          </div>
-          <div className="skill-pacman-m w-100 h-50 d-flex align-items-center justify-content-center position-absolute">
-            <img src={pacman} className="pacman-m "alt=""/>
-            <img src={bean} className="bean-m"alt=""/>
-            <img src={bean} className="bean-m"alt=""/>
-            <img src={bean} className="bean-m"alt=""/>
-            <img src={bean} className="bean-m"alt=""/>
-          </div>
-        </div>
+      <div className="skill position-relative " id="skill">
 
-        <div className="d-lg-block d-none w-100 h-75 ">
-          <div className="w-75 border skill-ipad position-absolute ">
-            <img src={ipad} className="w-75"alt=""/>
-          </div>
-          <div className="w-100 border d-flex align-items-center justify-content-center skill-pacman position-absolute">
-            <img src={pacman} className="pacman"alt=""/>
-            <img src={bean} className="bean px-lg-5"alt=""/>
-            <img src={bean} className="bean px-lg-5"alt=""/>
-            <img src={bean} className="bean px-lg-5"alt=""/>
-            <img src={bean} className="bean px-lg-5"alt=""/>
-            <img src={bean} className="bean px-lg-5"alt=""/>
-          </div>
+
+
+        <div className=" w-100 h-75 " >
+          <Waypoint
+            topOffset="90%"
+            onEnter={()=> setToggle(true)}
+            bottomOffset="40%"
+            onLeave={()=> setToggle(false)}
+          >
+            <div className=" skill-ipad ">
+              <animated.img  src={ipad} style={moveIpad}className="w-75"alt=""/>
+            </div>
+          </Waypoint >
+            <div className="w-75  d-flex align-items-lg-center align-items-end justify-content-lg-center justify-content-start pl-2 skill-pacman ">
+              <animated.img style={moveIt} src={pacman} className="pacman"alt=""/>
+              <animated.img style={makeGone}src={bean} className="bean px-lg-5"alt=""/>
+              <animated.img style={makeGoneTwo} src={bean} className="bean px-lg-5"alt=""/>              <animated.img style={moveFast} src={bean} className="bean px-lg-5"alt=""/>
+            </div>
         </div>
       </div>
 
 
       )
-  }
+
 }
 
 export default Skill;
+
