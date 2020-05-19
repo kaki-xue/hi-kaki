@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/13.3.0/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js dev
+  /usr/local/Cellar/node/13.3.0/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js add --save-dev eslint eslint-loader babel-eslint eslint-config-react eslint-plugin-react
 
 PATH: 
   /Users/kaki/.rbenv/shims:./bin:./node_modules/.bin:/anaconda3/bin:/Users/kaki/anaconda3/bin:/Users/kaki/.rbenv/shims:/Users/kaki/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/kaki/code/kaki-xue/myWebsite/hikaki-from-scratch/package.json: Unexpected token } in JSON at position 258
+  SyntaxError: /Users/kaki/code/kaki-xue/myWebsite/hikaki-from-scratch/package.json: Unexpected token } in JSON at position 284
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -28,8 +28,9 @@ npm manifest:
     "description": "",
     "main": "index.js",
     "scripts": {
+      "start": "webpack-dev-server --mode development",
+      "build": "webpack",
       "webpack-dev-server": "webpack-dev-server",
-      "dev": "webpack-dev-server --mode=development",
       "prod": "webpack --mode=production",
     },
     "keywords": [],
@@ -77,7 +78,7 @@ npm manifest:
       "webpack": "^4.42.1",
       "webpack-cli": "^3.3.11",
       "webpack-dev-server": "^3.10.3"
-    },
+    }
   }
 
 yarn manifest: 

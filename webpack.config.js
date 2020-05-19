@@ -6,7 +6,7 @@ module.exports = {
   mode: "production",
   entry: './src/index.js',
   output: {
-    path: path.resolve( __dirname, "dist"),
+    path: path.resolve( __dirname, "build"),
     filename: 'bundle.js',
     publicPath: '/',
   },
@@ -17,7 +17,7 @@ module.exports = {
       {
         test:  /\.(js$|jsx)/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/i,
@@ -46,6 +46,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    contentBase: "./build",
   },
   plugins: [
     new HtmlWebPackPlugin({
