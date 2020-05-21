@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import cocktaila from '../assets/image/cocktail-ipad-a.svg'
-import cocktailb from '../assets/image/cocktail-ipad-b.svg'
-import cocktailc from '../assets/image/cocktail-ipad-c.svg'
+import cocktaila from '../assets/image/cocktail-ipad-a.png'
+import cocktailb from '../assets/image/cocktail-ipad-b.png'
+import cocktailc from '../assets/image/cocktail-ipad-c.png'
 
 
 import {Link } from 'react-router-dom'

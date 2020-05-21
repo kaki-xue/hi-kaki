@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import fun_a from '../assets/image/fun-ipad-a.svg'
-import fun_b from '../assets/image/fun-ipad-b.svg'
-import fun_c from '../assets/image/fun-ipad-c.svg'
+import fun_a from '../assets/image/fun-ipad-a.png'
+import fun_b from '../assets/image/fun-ipad-b.png'
+import fun_c from '../assets/image/fun-ipad-c.png'
 import {Link } from 'react-router-dom'
 import home from '../assets/image/home.svg'
 import next from '../assets/image/next.svg'

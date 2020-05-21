@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import desktop_a from '../assets/image/ipad-spareleash-a.svg';
-import desktop_b from '../assets/image/ipad-spareleash-b.svg';
-import desktop_c from '../assets/image/ipad-spareleash-c.svg';
-import desktop_d from '../assets/image/ipad-spareleash-e.svg';
-import desktop_e from '../assets/image/ipad-spareleash-e.svg';
+import desktop_a from '../assets/image/ipad-spareleash-a.png';
+import desktop_b from '../assets/image/ipad-spareleash-b.png';
+import desktop_c from '../assets/image/ipad-spareleash-c.png';
+import desktop_d from '../assets/image/ipad-spareleash-d.png';
+import desktop_e from '../assets/image/ipad-spareleash-e.png';
 import {Link} from 'react-router-dom';
 import chili from '../assets/image/home.svg'
 import next from '../assets/image/next.svg'
