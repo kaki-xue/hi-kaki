@@ -1,17 +1,26 @@
 
-import React, { useRef } from 'react'
-import clamp from 'lodash-es/clamp'
-import { useSprings, animated } from 'react-spring'
-import { useDrag } from 'react-use-gesture'
+import React, { useRef } from 'react';
+import clamp from 'lodash-es/clamp';
+import { useSprings, animated } from 'react-spring';
+import { useDrag } from 'react-use-gesture';
+import spice from '../assets/image/card-chili.svg';
+import sunset from '../assets/image/card-sunset.svg';
+import noodles from '../assets/image/card-noodle.svg';
+import cactus from '../assets/image/card-cacatus.svg';
+import crator from '../assets/image/card-crater.svg';
+
+
+
 
 
 
 const pages = [
-  '../assets/image/card-chili.svg',
-  '../assets/image/card-crater.svg',
-  '../assets/image/card-sunset.svg',
-  '../assets/image/card-noodle.svg',
-  '../assets/image/card-cacatus.svg',
+  crator,
+  spice,
+  sunset,
+  noodles,
+  cactus,
+
 ]
 
 function Gallery() {
