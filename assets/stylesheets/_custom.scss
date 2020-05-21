@@ -1026,7 +1026,17 @@ box-shadow: 0 0 20px rgba(0,0,0,0.3);
 
 
 
+.profile-display-c {
 
+    @include media-breakpoint-up(md) {
+
+      @include media-breakpoint-up (lg) {
+        margin-right: 8rem;
+      }
+    }
+
+
+}
 
 
 

@@ -25,12 +25,11 @@ class Cocktail extends Component {
             <div className="w-75">
               <p className="text-black-50">Web APP</p>
               <h3>Project Bar of Change</h3>
-              <p>A web-app called Bar of Change that showcases ‘iching” inspired cocktails. On top of that , visitors can also create their own special mix to contribute to the cocktail recipe base.
-</p>
+              <p>A web-app called Bar of Change that showcases ‘iching” inspired cocktails. On top of that , visitors can also create their own special mix to contribute to the cocktail recipe base.</p>
             </div>
           </div>
 
-          <div className="profile-display-c w-100 d-flex justify-content-center mr-lg-5 align-items-end pb-5 ">
+          <div className="profile-display-c w-100 d-flex justify-content-center  align-items-end pb-5 ">
             <div id="carouselExampleFade" className="carousel slide carousel-fade position-relative" data-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
