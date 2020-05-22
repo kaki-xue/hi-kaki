@@ -13,7 +13,7 @@ function Text() {
       { transform: 'perspective(600px) rotateX(180deg)', color: '#A64AC9' },
       { transform: 'perspective(600px) rotateX(0deg)' },
     ],
-    leave: [{ color: '#34E3D9' }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
+    leave: [{ color: '#9F85FF' }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
     update: { color: '#FCCD04' },
   })
 

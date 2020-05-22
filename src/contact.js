@@ -3,7 +3,7 @@ import CardContact from './contactanime';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Text from './contact_text';
-import girl from '../assets/image/contact_girl.svg'
+import girl from '../assets/image/girl-bottom.svg'
 
 
 

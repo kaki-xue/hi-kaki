@@ -8,6 +8,8 @@ import {Link} from 'react-router-dom';
 import chili from '../assets/image/home.svg'
 import next from '../assets/image/next.svg'
 import previous from '../assets/image/previous.svg'
+import next_m from '../assets/image/next-m.svg';
+import pre_m from '../assets/image/pre-m.svg';
 
 
 class SpareLeash extends Component {
@@ -16,7 +18,15 @@ class SpareLeash extends Component {
       <div className="profile-b  max-vw-100 ">
 
          <div className="d-flex flex-lg-row flex-column vh-100 vw-100">
-          <div className="profile-nav  px-lg-3 px-2 d-lg-block d-flex justify-content-end">
+          <div className="profile-nav  px-lg-3 px-2 d-lg-block d-flex justify-content-between">
+          <div className="d-flex w-50 pt-3 px-3 d-lg-none justify-content-between">
+            <div>
+              <Link to={'/plantopia'}><img src={pre_m} alt="Previous"/> </Link>
+            </div>
+            <div>
+              <Link to={'/fun'}><img src={next_m}  alt="Next"/></Link>
+            </div>
+          </div>
             <Link to={`/`} className="d-block pt-lg-5 pt-3">
               <img src={chili} className="px-4"alt="go back" />
             </Link>

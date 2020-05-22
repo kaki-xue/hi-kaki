@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import {useSpring} from 'react-spring'
 import NavProject from './nav_project';
 
+
+
+
 const Nav =() => {
 
 
@@ -21,17 +24,20 @@ const Nav =() => {
     return (
       <div >
         <div className="nav vw-100  bg-white d-flex justify-content-between position-fixed fixed-top  px-5-lg  pt-2 align-items-center">
+
           <div className="d-block p-4 ml-4 nav-burger" onClick={()=> setNavOpen(!isNavOpen)} >三</div>
 
-       {/*     <div className="d-lg-flex d-md-flex d-sm-flex justify-content-start " >
-              <div className=" d-flex justify-content-end px-5 w-100 " >
-                <a className=" nav-item  h5 px-4" href="#home">Homee</a>
-                <a className=" nav-item  h5 px-4" href="#about">About</a>
-                <a className=" nav-item  h5 px-4" href="#skill">Skill</a>
-                <a className=" nav-item  h5 px-4" href="#work">Work</a>
-                <a className=" nav-item  h5 px-4" href="#contact">Contact</a>
-              </div>
-            </div>*/}
+          <div className="d-lg-flex d-md-flex d-none justify-content-start " >
+            <div className=" d-flex justify-content-end px-5 w-100 " >
+              <a className=" nav-item  h5 px-4" href="#home">Homee</a>
+              <a className=" nav-item  h5 px-4" href="#about">About</a>
+              <a className=" nav-item  h5 px-4" href="#skill">Skill</a>
+              <a className=" nav-item  h5 px-4" href="#work">Work</a>
+              <a className=" nav-item  h5 px-4" href="#contact">Contact</a>
+            </div>
+          </div>
+
+
 
 
 

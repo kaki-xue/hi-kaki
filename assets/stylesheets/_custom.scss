@@ -94,7 +94,7 @@ color:#A64AC9;
 }
 
 .nav-box {
-  z-index:100;
+  z-index:10000;
 }
 
 .nav-wrapper {
@@ -253,7 +253,7 @@ color:#A64AC9;
 }
 
 .nav-box {
-  z-index:100;
+  z-index:10000;
 }
 
 .nav-wrapper {
@@ -461,6 +461,7 @@ color:#A64AC9;
 
 // other than md & lg -------------------phones
 
+
 .nav-wrapper {
   width:100%;
 
@@ -500,7 +501,7 @@ color:#A64AC9;
   margin-top:20%;
   padding-bottom:20%;
   position:fixed;
-  z-index:1000;
+  z-index:10000;
   background-color:white;
   @include media-breakpoint-up(md) {
       margin-top:5%;
@@ -580,7 +581,7 @@ color:#A64AC9;
 }
 
   .full-stack {
-  font-size:32px;
+  font-size:28px;
   font-weight:bold;
    @include media-breakpoint-up(md) {
     font-size: 48px;
@@ -922,6 +923,7 @@ box-shadow: 0 0 20px rgba(0,0,0,0.3);
    // profile
 .profile-nav {
     height:10vh;
+    margin-bottom:1em;
    }
 
 
@@ -1105,7 +1107,7 @@ box-shadow: 0 0 20px rgba(0,0,0,0.3);
     @include media-breakpoint-up(md) {
 
       @include media-breakpoint-up (lg) {
-        margin-right: 8rem;
+        margin-right: 10rem;
       }
     }
 
@@ -1185,11 +1187,11 @@ box-shadow: 0 0 20px rgba(0,0,0,0.3);
 
 
 .fun {
-  background: url('../image/fun-bg-ipad.svg') bottom no-repeat;
+  background: url('../image/fun-bg-mi.svg') bottom no-repeat;
   height:150vh;
   background-size:cover;
      @include media-breakpoint-up(md) {
-      background: url('../image/fun-bg-ipad.svg') center no-repeat;
+      background: url('../image/fun-bg-mi.svg') center no-repeat;
       @include media-breakpoint-up (lg) {
        background: url('../image/project-fun.svg') center no-repeat;
       }

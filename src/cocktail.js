@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import cocktaila from '../assets/image/cocktail-ipad-a.png'
 import cocktailb from '../assets/image/cocktail-ipad-b.png'
 import cocktailc from '../assets/image/cocktail-ipad-c.png'
-
-
 import {Link } from 'react-router-dom'
 import home from '../assets/image/home.svg'
 import next from '../assets/image/next.svg'
 import previous from '../assets/image/previous.svg'
+import next_m from '../assets/image/next-m.svg';
+import pre_m from '../assets/image/pre-m.svg';
 
 class Cocktail extends Component {
   render() {
@@ -15,17 +15,25 @@ class Cocktail extends Component {
       <div className="profile-c max-vw-100">
 
          <div className="d-flex flex-lg-row flex-column vh-100 vw-100 cocktail">
-            <div className="profile-nav  px-lg-3 px-2 d-lg-block d-flex justify-content-end">
+            <div className="profile-nav  px-lg-3 px-2 d-lg-block d-flex justify-content-between">
+            <div className="d-flex w-50 pt-3 px-3 d-lg-none justify-content-between">
+              <div>
+                <Link to={'/fun'}><img src={pre_m} alt="Previous"/> </Link>
+              </div>
+              <div>
+                <Link to={'/plantopia'}><img src={next_m}  alt="Next"/></Link>
+              </div>
+            </div>
               <Link to={`/`} className="d-block pt-lg-5 pt-3">
                 <img src={home} className="px-4"alt="go back" />
               </Link>
             </div>
 
-          <div className="profile-content d-flex justify-content-center align-items-start pt-5 mt-4 ">
-            <div className="w-75">
+          <div className="profile-content d-flex justify-content-center align-items-start pt-lg-5 pt-md-5 mt-lg-4 mt-md-4 ">
+            <div className="w-lg-75 w-md-75 w-100 px-4 mx-2">
               <p className="text-black-50">Web APP</p>
               <h3>Project Bar of Change</h3>
-              <p>A web-app called Bar of Change that showcases ‘iching” inspired cocktails. On top of that , visitors can also create their own special mix to contribute to the cocktail recipe base.</p>
+              <p className="mt-3">A web-app called Bar of Change that showcases ‘iching” inspired cocktails. On top of that , visitors can also create their own special mix to contribute to the cocktail recipe base.</p>
             </div>
           </div>
 

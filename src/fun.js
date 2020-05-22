@@ -6,6 +6,8 @@ import {Link } from 'react-router-dom'
 import home from '../assets/image/home.svg'
 import next from '../assets/image/next.svg'
 import previous from '../assets/image/previous.svg'
+import next_m from '../assets/image/next-m.svg';
+import pre_m from '../assets/image/pre-m.svg';
 
 class Fun extends Component {
   render() {
@@ -14,16 +16,24 @@ class Fun extends Component {
 
 
          <div className="d-lg-flex flex-lg-row vh-100 vw-100 fun">
-          <div className="profile-nav  px-lg-3 px-2 d-lg-block d-flex justify-content-end">
+          <div className="profile-nav  px-lg-3 px-2 d-lg-block d-flex justify-content-between">
+          <div className="d-flex w-50 pt-3 px-3 d-lg-none  justify-content-between">
+            <div>
+              <Link to={'/spareleash'}><img src={pre_m} alt="Previous"/> </Link>
+            </div>
+            <div>
+              <Link to={'/cocktail'}><img src={next_m}  alt="Next"/></Link>
+            </div>
+          </div>
             <Link to={`/`} className="d-block pt-lg-5 pt-3">
               <img src={home} className="px-4"alt="go back" />
             </Link>
           </div>
-          <div className="d-lg-none profile-content d-flex justify-content-center align-items-start pt-5 mt-4 ">
-            <div className="w-75">
+          <div className="d-lg-none profile-content d-flex justify-content-center align-items-start pt-lg-5 pt-md-5 mt-4 ">
+            <div className="w-lg-75 w-md-75 w-100 px-4 mx-2">
               <p className="text-black-50">Vanilla Javascript</p>
               <h3>Fun Javascript Pages</h3>
-              <p>Some fun little projects that I’ve done with pure vanilla javascript. A keyboard drumset, an ever clicking digital clock, a gallery on religions etc.
+              <p className="mt-3">Some fun little projects that I’ve done with pure vanilla javascript. A keyboard drumset, an ever clicking digital clock, a gallery on religions etc.
 </p>
             </div>
 
@@ -57,7 +67,7 @@ class Fun extends Component {
           <div className="profile-content d-none d-lg-flex justify-content-center align-items-start pt-5 mt-4 ">
             <div className="w-75">
               <p className="text-black-50">Wechat mini program</p>
-              <h3>Plantopia</h3>
+              <h3>Vanilla Javascript</h3>
               <p>Some fun little projects that I’ve done with pure vanilla javascript. A keyboard drumset, an ever clicking digital clock, a gallery on religions etc.</p>
             </div>
 
