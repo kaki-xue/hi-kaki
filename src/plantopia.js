@@ -32,11 +32,11 @@ class Plantopia extends Component {
             </Link>
 
           </div>
-          <div className="profile-content text-justify px-4 ">
+          <div className="profile-content px-4 ">
             <div className = "pt-lg-5 ">
               <p className="text-black-50">Wechat mini program</p>
               <h2>Plantopia</h2>
-              <p>Plantopia is a WeChat mini program which enables people to recognize and discover plants by simply take a photo of it. They can also create the digital profiles for their own plants on this mini program for better and easier plant management such as getting reminders when their plants are unhappy due to dehydration.</p>
+              <p>Plantopia is a WeChat mini program which enables people to recognize and discover plants by simply take a photo of it. They can also create the digital profiles for their own plants for better plant management such as getting watering reminders etc.</p>
             </div>
           </div>
 

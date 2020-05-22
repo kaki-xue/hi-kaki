@@ -31,7 +31,7 @@ class SpareLeash extends Component {
               <img src={chili} className="px-4"alt="go back" />
             </Link>
           </div>
-          <div className="profile-content  text-justify d-flex flex-column ">
+          <div className="profile-content  d-flex flex-column ">
             <div className=" profilf-text d-flex align-items-center px-lg-0 px-4  pb-2">
               <div className="pt-lg-5">
                 <p className="text-black-50">Wechat mini program</p>
