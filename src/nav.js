@@ -29,7 +29,7 @@ const Nav =() => {
 
           <div className="d-lg-flex d-md-flex d-none justify-content-start " >
             <div className=" d-flex justify-content-end px-5 w-100 " >
-              <a className=" nav-item  h5 px-4" href="#home">Homee</a>
+              <a className=" nav-item  h5 px-4" href="#home">Home</a>
               <a className=" nav-item  h5 px-4" href="#about">About</a>
               <a className=" nav-item  h5 px-4" href="#skill">Skill</a>
               <a className=" nav-item  h5 px-4" href="#work">Work</a>

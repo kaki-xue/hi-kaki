@@ -66,7 +66,7 @@ class Fun extends Component {
           </div>
           <div className="profile-content d-none d-lg-flex justify-content-center align-items-start pt-5 mt-4 ">
             <div className="w-75">
-              <p className="text-black-50">Wechat mini program</p>
+              <p className="text-black-50">Interactive Web Pages</p>
               <h3>Vanilla Javascript</h3>
               <p>Some fun little projects that I’ve done with pure vanilla javascript. A keyboard drumset, an ever clicking digital clock, a gallery on religions etc.</p>
             </div>
