@@ -5,11 +5,7 @@ import bean from '../assets/image/skill_bean.svg'
 import {useSpring, animated, config} from 'react-spring';
 import {Waypoint } from 'react-waypoint'
 
-
-
-
-
-const Skill =() => {
+const SkillMobile =() => {
 
   const [isToggled, setToggle] = useState(false);
   const moveIt = useSpring({
@@ -21,7 +17,7 @@ const Skill =() => {
   })
   const moveIpad = useSpring({
     delay: 500,
-    transform: isToggled ? 'translateX(400px)':'translateX(0px)',
+    transform: isToggled ? 'translateX(364px)':'translateX(50px)',
     duration: 500,
     config: config.molasses
   })
@@ -45,28 +41,28 @@ const Skill =() => {
    console.log('hey you')
 
     return (
-      <div className="skill position-relative skillForPC" id="skill">
-        <div className=" w-100 h-75 " >
+      <div className="skill position-relative skillForMobile" id="skill">
+        <div className=" w-100 h-100 " >
           <Waypoint
             topOffset="90%"
             onEnter={()=> setToggle(true)}
             bottomOffset="40%"
-            onLeave={()=> setToggle(false)}
+       
           >
             <div className="skill-ipad">
               <animated.img  src={ipad} style={moveIpad} className="w-75"alt=""/>
             </div>
           </Waypoint >
-            <div className="w-75  d-flex align-items-lg-center align-items-end justify-content-lg-center justify-content-start pl-2 skill-pacman ">
-              <animated.img style={moveIt} src={pacman} className="pacman"alt=""/>
-              <animated.img style={makeGone}src={bean} className="bean px-lg-5"alt=""/>
-              <animated.img style={makeGoneTwo} src={bean} className="bean px-lg-5"alt=""/>              
-              <animated.img style={moveFast} src={bean} className="bean px-lg-5"alt=""/>
+            <div className="w-75  d-none align-items-lg-center align-items-end justify-content-lg-center justify-content-start pl-2 skill-pacman ">
+              <img  src={pacman} className="pacman"alt="" />
+              <img  src={bean} className="bean px-lg-5"alt=""/>
+              <img  src={bean} className="bean px-lg-5"alt=""/>              
+              <img  src={bean} className="bean px-lg-5"alt=""/>
             </div>
         </div>
       </div>
       )
 }
 
-export default Skill;
-
+export default SkillMobile;
+//     //onLeave={()=> setToggle(false)}

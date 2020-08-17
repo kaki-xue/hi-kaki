@@ -5,6 +5,8 @@ import About from './about';
 import Skill from './skill';
 import Work from './work';
 import Contact from './contact';
+import SkillMobile from './skillMobile';
+
 
 const App = () => {
 
@@ -15,7 +17,8 @@ const App = () => {
         <Home/>
         <div className="stickybg"></div>
         <About/>
-        <Skill/>
+        <SkillMobile className="skillForMobile"/>
+        <Skill className="skillForPC"/>
         <Work/>
         <Contact/>
 
