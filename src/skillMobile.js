@@ -41,7 +41,7 @@ const SkillMobile =() => {
    console.log('hey you')
 
     return (
-      <div className="skill position-relative skillForMobile" id="skill">
+      <div className="skill position-relative skillForMobile" >
         <div className=" w-100 h-100 " >
           <Waypoint
             topOffset="90%"
