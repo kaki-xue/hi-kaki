@@ -17,8 +17,8 @@ const App = () => {
         <Home/>
         <div className="stickybg"></div>
         <About/>
-        <SkillMobile className="skillForMobile"/>
-        <Skill className="skillForPC"/>
+        <SkillMobile />
+        <Skill/>
         <Work/>
         <Contact/>
 
