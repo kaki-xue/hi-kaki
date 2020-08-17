@@ -22,7 +22,7 @@ const Contact = () => {
           <div data-aos= "fade-up" className="w-100 h-100 contact-image">
             <CardContact/>
           </div>
-          <div data-aos= "zoom-in-up" className="position-absolute contact-me">
+          <div data-aos= "fade-up" className="position-absolute contact-me">
            <p> Hey feel free to contact me via wechat or email if you would like to build a website, webapp, mini-programs or simply wanna chat over a cup of tea !</p>
             <p> wechat: kakixue-li <br/>
            email: kaki.noodles@gmail.com </p>
@@ -36,7 +36,7 @@ const Contact = () => {
             </div>
             <div className="contact-kaki pl-4 ">
               <p> wechat: kakixue-li </p>
-              <p> email: kaki.noodles@gmail.com </p>
+              <p> email: kaki.lixue@gmail.com </p>
             </div>
           </div>
         </div>
