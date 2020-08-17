@@ -17,7 +17,7 @@ const SkillMobile =() => {
   })
   const moveIpad = useSpring({
     delay: 500,
-    transform: isToggled ? 'translateX(364px)':'translateX(50px)',
+    transform: isToggled ? 'translateX(380px)':'translateX(0px)',
     duration: 500,
     config: config.molasses
   })

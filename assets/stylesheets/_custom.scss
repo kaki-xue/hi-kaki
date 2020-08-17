@@ -730,7 +730,10 @@ box-shadow: 0 0 20px rgba(0,0,0,0.3);
 
   @include media-breakpoint-down (md) {
     height:100vh;
+    @include media-breakpoint-down (sm) {
+      height:50vh;
 
+    }
   }
 
   }
@@ -774,8 +777,8 @@ box-shadow: 0 0 20px rgba(0,0,0,0.3);
    // overflow:hidden;
   // left:-35%;
   position:absolute;
-  top:30%;
-  left: -100%;
+  top:-10%;
+  left: -80%;
    width:100%;
     @include media-breakpoint-up (md) {
       top:-5%;
